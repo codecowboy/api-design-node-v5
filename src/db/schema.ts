@@ -1,6 +1,6 @@
 import { pgTable, uuid, varchar, text, timestamp, boolean, integer } from 'drizzle-orm/pg-core'
 import { relations} from 'drizzle-orm'
-import { createInsertSchema, CreateInsertSchema, createSelectSchema, CreateSelectSchema } from 'drizzle-zod'
+import { createInsertSchema, createSelectSchema } from 'drizzle-zod'
 
 export const users = pgTable('users', {
     id:uuid('id').primaryKey().defaultRandom(),
